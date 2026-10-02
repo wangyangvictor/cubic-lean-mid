@@ -1,0 +1,9 @@
+Cubic forms Lean formalization
+Copyright 2026 wangyangvictor and contributors.
+
+Original project code is made available under the Apache License, Version 2.0.
+Existing copyright and attribution notices in reused source remain applicable.
+See formalization/CubicTenVariables/CubicTenVariables/PrimeGapsReuse.NOTICE,
+PrimeGapsReuse.LICENSE and SpherePackingReuse.LICENSE in that directory,
+and the attribution comments in the corresponding Lean source files.
+External Lake dependencies are distributed separately under their own licenses.

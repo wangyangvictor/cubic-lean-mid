@@ -1,0 +1,187 @@
+{
+  "status": "PASSED",
+  "checked_at_utc": "2026-10-02T04:02:40.507124+00:00",
+  "platform": "macOS; local checks, not a completed GitHub Linux CI run",
+  "original_local_modules": 2150,
+  "selected_modules_with_public_roots": 2152,
+  "publication_audit_modules": 1,
+  "explicit_main_premises": 5,
+  "fresh_local_build": {
+    "status": "PASSED",
+    "local_modules": 2152,
+    "checked_at_utc": "2026-10-02T03:45:17.838162+00:00",
+    "fresh_build_provenance": "Staged local proof objects began empty; completed objects came from bounded local source builds, with pinned external caches reused.",
+    "bounded_build": {
+      "exit_code": 0,
+      "exit_code_provenance": "Observed from the owned build process by the caller before invoking this gate script.",
+      "log": "ready_public_build.log",
+      "log_sha256": "208ae33dd726adae094e687f34566c9e2022651746b0d010a9598dd88f0b6256",
+      "workspace_modules": 9896,
+      "max_requested_compilers": 3
+    },
+    "final_source_rehash": {
+      "status": "PASSED",
+      "exit_code": 0,
+      "command": [
+        "lake",
+        "--rehash",
+        "--no-build",
+        "build",
+        "CubicTenVariables",
+        "HessianTheorem11",
+        "TranslatedDepthSeven"
+      ],
+      "log": "final_public_rehash.log",
+      "log_sha256": "15d6fd27a5049e8cc97f8a05f3f7a5a019e9280bd8ea2539b5b92bda000d0112"
+    },
+    "configuration_sha256": {
+      "formalization/CubicTenVariables/lake-manifest.json": "1066db65d53e2f4606505c3f070f2650ce63e69f56940836d8a2a84680d04e13",
+      "formalization/CubicTenVariables/lean-toolchain": "e8173aad377a6d70041e5f7a5d8895ed587628f5cab243c53a18c40a1b7b6bf8",
+      "formalization/HessianTheorem11/lake-manifest.json": "c128b5b90bd768380b928a033055405b1656f6089bb3753f75151d7efdcf832e",
+      "formalization/HessianTheorem11/lean-toolchain": "e8173aad377a6d70041e5f7a5d8895ed587628f5cab243c53a18c40a1b7b6bf8",
+      "formalization/TranslatedDepthSeven/lake-manifest.json": "1262638ad8c008e3102c4c28ff1372a46e4cbd09da96ebbda6a446519eeaa6a9",
+      "formalization/TranslatedDepthSeven/lean-toolchain": "e8173aad377a6d70041e5f7a5d8895ed587628f5cab243c53a18c40a1b7b6bf8"
+    },
+    "proof_compiler": "Lean (version 4.26.0, arm64-apple-darwin24.6.0, commit d8204c9fd894f91bbb2cdfec5912ec8196fd8562, Release)",
+    "public_roots": [
+      "CubicTenVariables",
+      "HessianTheorem11",
+      "TranslatedDepthSeven"
+    ],
+    "publication_audit_passed": true
+  },
+  "source_inventory": "checks/source-files.sha256",
+  "publication_audit": {
+    "status": "PASSED",
+    "exit_code": 0,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "PublicationAudit.lean"
+    ],
+    "log": "publication_audit.log",
+    "log_sha256": "899a518b350f9e70c8d9b6139c86d336276e80bbebfe4c947562aa1973ba6853",
+    "project_modules": 2152,
+    "project_declarations": 27056,
+    "theorem_counts": {
+      "CubicTenVariables": 8564,
+      "HessianTheorem11": 4498,
+      "TranslatedDepthSeven": 7815,
+      "private_or_other_namespace": 946
+    },
+    "permitted_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "literal_main_signature_checked": true,
+    "explicit_literature_parameters": 5,
+    "audit_source": "formalization/CubicTenVariables/PublicationAudit.lean",
+    "audit_source_sha256": "ad681d98886c6c15c987d3cd414552388689babf33867bd184a96d811a1e27fe"
+  },
+  "nanoda_declarations": 104078,
+  "public_script_replay_export_sha256": "f19e9731f6098176216542b262a9d2f1b9f91e73a8fc3f397d272c71ab9595c0",
+  "external_dependencies": [
+    {
+      "name": "mathlib",
+      "expected": "2df2f0150c275ad53cb3c90f7c98ec15a56a1a67",
+      "head": "2df2f0150c275ad53cb3c90f7c98ec15a56a1a67",
+      "tracked_changes": false,
+      "nonignored_untracked_lean_sources": false
+    },
+    {
+      "name": "PrimeNumberTheoremAnd",
+      "expected": "db0b69d008f3991b6f03bc5f59504f02eb6c724b",
+      "head": "db0b69d008f3991b6f03bc5f59504f02eb6c724b",
+      "tracked_changes": false,
+      "nonignored_untracked_lean_sources": false
+    },
+    {
+      "name": "checkdecls",
+      "expected": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+      "head": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+      "tracked_changes": false,
+      "nonignored_untracked_lean_sources": false
+    },
+    {
+      "name": "LeanArchitect",
+      "expected": "07f0b8cb127ce0fc9e3239609e7b4824fa5e38ed",
+      "head": "07f0b8cb127ce0fc9e3239609e7b4824fa5e38ed",
+      "tracked_changes": false,
+      "nonignored_untracked_lean_sources": false
+    },
+    {
+      "name": "Cli",
+      "expected": "933fce7e893f65969714c60cdb4bd8376786044e",
+      "head": "933fce7e893f65969714c60cdb4bd8376786044e",
+      "tracked_changes": false,
+      "nonignored_untracked_lean_sources": false
+    },
+    {
+      "name": "batteries",
+      "expected": "24241822ef9d3e7f6a3bcc53ad136e12663db8f3",
+      "head": "24241822ef9d3e7f6a3bcc53ad136e12663db8f3",
+      "tracked_changes": false,
+      "nonignored_untracked_lean_sources": false
+    },
+    {
+      "name": "plausible",
+      "expected": "160af9e8e7d4ae448f3c92edcc5b6a8522453f11",
+      "head": "160af9e8e7d4ae448f3c92edcc5b6a8522453f11",
+      "tracked_changes": false,
+      "nonignored_untracked_lean_sources": false
+    },
+    {
+      "name": "LeanSearchClient",
+      "expected": "3591c3f664ac3719c4c86e4483e21e228707bfa2",
+      "head": "3591c3f664ac3719c4c86e4483e21e228707bfa2",
+      "tracked_changes": false,
+      "nonignored_untracked_lean_sources": false
+    },
+    {
+      "name": "importGraph",
+      "expected": "e9f31324f15ead11048b1443e62c5deaddd055d2",
+      "head": "e9f31324f15ead11048b1443e62c5deaddd055d2",
+      "tracked_changes": false,
+      "nonignored_untracked_lean_sources": false
+    },
+    {
+      "name": "proofwidgets",
+      "expected": "b4fb2aa5290ebf61bc5f80a5375ba642f0a49192",
+      "head": "b4fb2aa5290ebf61bc5f80a5375ba642f0a49192",
+      "tracked_changes": false,
+      "nonignored_untracked_lean_sources": false
+    },
+    {
+      "name": "aesop",
+      "expected": "2f6d238744c4cb07fdc91240feaf5d4221a27931",
+      "head": "2f6d238744c4cb07fdc91240feaf5d4221a27931",
+      "tracked_changes": false,
+      "nonignored_untracked_lean_sources": false
+    },
+    {
+      "name": "Qq",
+      "expected": "9312503909aa8e8bb392530145cc1677a6298574",
+      "head": "9312503909aa8e8bb392530145cc1677a6298574",
+      "tracked_changes": false,
+      "nonignored_untracked_lean_sources": false
+    }
+  ],
+  "mathematical_source_review_method": "AI-assisted source review; no independent human sign-off claimed",
+  "mathematical_source_review_scope": [
+    "Five unproved literature interfaces and their intended derivations",
+    "Fixed-leading primitive/curve/line counting and actual coverage",
+    "24 geometry interface/construction sources",
+    "10 analytic endpoint/model sources"
+  ],
+  "limits": [
+    "Five propositions remain mathematical hypotheses.",
+    "AI-assisted source reviews are bounded; no exhaustive reproof of all imported mathematics.",
+    "No finite audit guarantees absence of kernel, compiler, exporter, checker or modeling bugs.",
+    "Whole-environment same-kernel replay was stopped and is not credited.",
+    "GitHub-hosted Linux CI is an additional post-publication check."
+  ],
+  "included": "Lean sources, package metadata, license notices, verification scripts and concise receipts",
+  "excluded": "Manuscripts/drafts, research notes, progress ledgers, downloaded dependencies, compiler caches, binaries, large proof exports and models"
+}

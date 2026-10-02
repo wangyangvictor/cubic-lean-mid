@@ -1,0 +1,59 @@
+ScaledFourierL1Decay.lean adapts the low/high frequency proof pattern and local
+proof fragments of PrimeGap186.compactProfile_fourier_decay_bound_order.
+Source: https://github.com/openai/PrimeGaps186/blob/61340d0b74163003b32756bb16e91d9209a5e330/PrimeGaps186.lean
+License: Apache 2.0; full text in PrimeGapsReuse.LICENSE.
+
+Modified: input support/pointwise derivative bounds replaced by two actual
+scaled derivative-integral bounds; namespace/imports and Lean version changed;
+the proof split into weighted and real-power decay forms. No project axioms
+from PrimeGaps186 are imported or used.
+
+The source file includes the following third-party notices. They are retained
+for provenance and do not assert that these particular Fourier lemmas derive
+from any of the listed third parties:
+
+Lean version: 4.34.0-rc2 (leanprover/lean4:v4.34.0-rc2).
+Mathlib revision: bbcd1968ee6950abe88b85dba6995da346c4b2a8.
+
+Upstream credits
+
+This file includes adapted declarations and local proof fragments from the projects below.
+Their credits and Apache 2.0 notices apply to portions derived from those projects. They do not
+assert authorship or a license for independently developed material or for this entire file.
+Some reuse is limited to subarguments within otherwise independent proofs.
+
+Modified: namespaces and imports consolidated; declarations renamed and reorganized; helpers
+inlined; statements, definitions and proofs refactored for this development and its Mathlib API.
+The adaptations are not asserted to be verbatim copies of the upstream files.
+
+Attribution: FormalPantheon (frenzymath) contributors.
+Adapted areas include the Stepanov and Weil finite-field arguments, Dirichlet L-functions,
+large-sieve and Bombieri-Vinogradov estimates, and selected Maynard/Selberg arithmetic,
+congruence-counting and tail arguments. These credits include local fragments of the
+root-multiplicity, fiber-count, Euler-product, discrepancy and Selberg-moment proofs; they do
+not assert that every declaration in these areas is derived from upstream.
+Pinned source tree:
+https://github.com/frenzymath/FormalPantheon/tree/ffbb65c21afc8a36ace67720f1b0df1c63d26bd1
+Released upstream under the Apache License, Version 2.0:
+https://github.com/frenzymath/FormalPantheon/blob/ffbb65c21afc8a36ace67720f1b0df1c63d26bd1/LICENSE
+
+Attribution: PrimeNumberTheoremAnd (PNT+) contributors.
+Authors of adapted upstream proof ranges include ajirving, giuseppe.sorge and teorth.
+Adapted portions of the Mertens development run from `mangoldtLogError` through
+`prime_correction_summable`; intervening arguments may be new or substantially rewritten.
+Pinned source tree:
+https://github.com/AlexKontorovich/PrimeNumberTheoremAnd/tree/47fa48680663df41146704d02a5b092d792bd5b9
+Released upstream under the Apache License, Version 2.0:
+https://github.com/AlexKontorovich/PrimeNumberTheoremAnd/blob/47fa48680663df41146704d02a5b092d792bd5b9/LICENSE
+
+Copyright (c) 2026 Axiom Math. All rights reserved.
+Authors: Axiom Math
+Adapted portions of PrimeGapsLib occur in `PrimeGap186.finMulAntidiag_filter_coordinate`,
+`PrimeGap186.zeta_pow_eq_card_finMulAntidiag`, `PrimeGap186.one_le_zeta_pow` and
+`PrimeGap186.product_lcm_fiber_card_le`. The adaptations rename and move the declarations,
+expand divisor-function notation, refactor finite-product arguments, and generalize the
+product-fiber estimate to independent divisor supports.
+Pinned source tree:
+https://github.com/AxiomMath/PrimeGapsLib/tree/1faa7b14e82ddebc2772dfb9153922f01b106477
+Released under Apache 2.0 license as described in the upstream LICENSE:
+https://github.com/AxiomMath/PrimeGapsLib/blob/1faa7b14e82ddebc2772dfb9153922f01b106477/LICENSE

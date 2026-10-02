@@ -1,0 +1,170 @@
+{
+  "status": "PASSED for the final five-input theorem and additional adversarial controls",
+  "target": "CubicTenVariables.Theorem11ReducedZetaInternalCurves.main",
+  "main_source_sha256": "580674271e59ccfbc80267a70c3a0743400081be670cc57bde5e11a92dad9650",
+  "literal_conclusion": "For every natural n >= 10 and every homogeneous cubic F over Q in n variables (including F=0), there exists a nonzero rational vector x with F(x)=0.",
+  "explicit_proposition_parameters": [
+    "CubicTenVariables.Literature.ProjectiveMicrolocalCertificate",
+    "CubicTenVariables.Literature.SmoothCubicWeil",
+    "CubicTenVariables.Literature.ProperHyperplaneWeightDichotomy",
+    "CubicTenVariables.Literature.AffinePlaneCurveWeil",
+    "CubicTenVariables.Literature.CubicSurfaceZetaFactorBounds"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "nanoda_checked_declarations": 104078,
+  "fresh_lean_and_comparator_statement_check": true,
+  "original_admission_controls_rejected": true,
+  "original_proved_wrong_statement_control_rejected": true,
+  "canonical_core_axioms_and_primitives_match_pristine_lean_init": true,
+  "ill_typed_proof_rejected_by_comparator_and_nanoda": true,
+  "changed_definition_body_rejected_by_comparator": true,
+  "forged_permitted_name_axiom_type_rejected_by_comparator": true,
+  "source_guard_modules": 2150,
+  "source_guard_challenge_modules": 624,
+  "source_boundary_scan": {
+    "local_files": 2150,
+    "admissions": 0,
+    "axiom_commands": 0,
+    "unsafe_declarations": 0,
+    "environment_mutations": 0,
+    "native_decide": 0,
+    "eval_commands": 0
+  },
+  "proof_compiler": "Lean 4.26.0",
+  "comparator_fresh_kernel": "Lean 4.35.0-rc3",
+  "source_pins": {
+    "comparator": "fd5d5bcf14177b187f66d4502071268d877887c3",
+    "lean4export": "66f1fb4bc256072069767fce52d39480e4524869",
+    "nanoda_lib": "3a2407216ee84a75f9e1aead6803d0578be06ae7",
+    "lean4checker": "db1e1d3d049495b22325288a02533e79a6f87778"
+  },
+  "proof_export_sha256": "79534b6139d7d7c38e54c9dd5c3c96e2a18134ef059e619b6f991ad9ec019307",
+  "export_bytes": 1248726645,
+  "original_sealed_manifest_sha256": "6470fa98b357128947331e4c5a0bef53bd4b84aafcbd33759685117df605653d",
+  "additional_control_exit_codes": {
+    "canonical_core_comparison": 0,
+    "comparator_ill_typed": 1,
+    "comparator_definition_mismatch": 1,
+    "comparator_forged_axiom_ordered": 1,
+    "nanoda_ill_typed": 101
+  },
+  "additional_same_kernel_full_environment_replay": {
+    "status": "NOT COMPLETED; NOT CREDITED",
+    "termination": "SIGTERM sent only to owned checker PID 18307",
+    "elapsed_seconds": 1574.8753152920108,
+    "last_sample_cpu_time": "16:36.20",
+    "last_sample_elapsed": "23:18",
+    "last_sample_rss_kib": 3416816,
+    "reason": "The whole imported-environment replay consumed about 3.26 GiB on a 16 GiB host and competed with the clean public-source rebuild. It was explicitly stopped; the already passed proof-specific Comparator fresh-kernel and independent Nanoda checks remain the credited kernel evidence.",
+    "scope": "Original Lean 4.26.0 kernel, entire imported environment, including declarations outside the actual exported proof closure; no independent kernel or axiom allowlist for unused imports."
+  },
+  "portable_optional_script": {
+    "path": "scripts/independent-checks.sh",
+    "shell_syntax_checked": true,
+    "embedded_python_syntax_checked": true,
+    "end_to_end_staged_replay": {
+      "status": "PASSED",
+      "nanoda_checked_declarations": 104078,
+      "proof_export_sha256": "f19e9731f6098176216542b262a9d2f1b9f91e73a8fc3f397d272c71ab9595c0",
+      "canonical_init_comparison": true,
+      "admission_controls_rejected": true,
+      "proved_wrong_statement_control_rejected": true,
+      "checker_binary_sha256": {
+        "lean4export-4.26.0": "d2abe0fe638bf3b9646fd0c57041fb7393495ff9b95959bf81848f4caebcc524",
+        "lean": "d1d9c26a539f54fe839d2aa7760bf1ac1dd76a30b26e2c9684bebf2900038fcf",
+        "nanoda_bin": "ced05793d45d7c447e818e9bef9b80642bfd4dd947e5dae9a882a40b3d8eefbb"
+      },
+      "verification_script_sha256": "2fcf176f6f3a0ee48dec6f6b42b69d99476f2037bc1635d030cfbe02a5c08d89"
+    },
+    "tool_source_version_preflight": "PASSED with dedicated Lean-4.26 PATH; no build or exports were started during the staged source build",
+    "final_read_only_gate_review": "PASSED: pinned clean tool sources, exact compiler version tokens, mandatory rehash/no-build check, isolated literal challenge, explicit Comparator and Nanoda success diagnostics, rejection controls, exact axiom and target declaration inventory, and unchanged complete production source inventory. Full staged replay still awaits the green build and rehash check."
+  },
+  "limits": [
+    "The theorem is an implication from five explicit mathematical propositions; the kernels do not prove those inputs or their literature fidelity.",
+    "The checks validate the literal Lean definitions and statement, not their equivalence with the intended informal mathematics.",
+    "Nanoda is an independent Rust type checker. Comparator replays the exported proof in Lean\u2019s kernel; it is not a third independent kernel.",
+    "The positive checkers share Lean\u2019s proof export. Source review, source/object hash guards and canonical Init comparison give additional evidence, not a proof of perfect exporter/compiler correctness.",
+    "No hardened adversarial OS sandbox was used. No finite audit guarantees the absence of all kernel, compiler or modeling bugs.",
+    "The optional script requires externally built pinned checker binaries, whose hashes are recorded. It does not install them or ship compiler caches/large proof exports.",
+    "The focused positivity, recursor and universe controls cover selected rejection paths; they are not a formal proof of the checker implementations or exhaustive tests of universe/inductive combinations.",
+    "Kernel conversion rules, proof irrelevance, quotient primitives, and natural-number/string computation remain trusted implementations. Canonical Init comparison protects the definitions those rules expect, but does not prove the algorithms correct.",
+    "The publication copy was freshly compiled locally; pinned external caches were reused. The public script independently replayed the resulting main proof, not every unrelated theorem in the public roots."
+  ],
+  "setup_notes": [
+    "The ill-typed Nanoda control rejects by a Rust assertion with exit 101; this is distinguished from its normal exit-1 axiom rejection.",
+    "An exploratory forged-axiom export with invalid forward references was discarded as a parse-error control. The credited control uses valid ordering and is rejected specifically for the changed propext type."
+  ],
+  "checker_repositories": {
+    "comparator": "https://github.com/leanprover/comparator.git",
+    "lean4export": "https://github.com/leanprover/lean4export.git",
+    "nanoda_lib": "https://github.com/ammkrn/nanoda_lib.git",
+    "lean4checker": "https://github.com/leanprover/lean4checker.git"
+  },
+  "optional_checker_setup": {
+    "prerequisites": [
+      "A successful scripts/check.sh build; independent-checks.sh requires lake --rehash --no-build validation of the target and does not launch a new unbounded build",
+      "Git",
+      "Python 3",
+      "elan/Lake with Lean 4.26.0 and Lean 4.35.0-rc3 installed",
+      "Rust/Cargo 1.98.1, selectable with rustup"
+    ],
+    "commands_from_an_empty_checker_tools_directory": [
+      "git clone https://github.com/leanprover/lean4export.git lean4export-426",
+      "git -C lean4export-426 checkout --detach 66f1fb4bc256072069767fce52d39480e4524869",
+      "(cd lean4export-426 && lake +leanprover/lean4:v4.26.0 build)",
+      "git clone https://github.com/leanprover/lean4export.git lean4export",
+      "git -C lean4export checkout --detach 66f1fb4bc256072069767fce52d39480e4524869",
+      "(cd lean4export && lake +leanprover/lean4:v4.35.0-rc3 build)",
+      "git clone https://github.com/leanprover/comparator.git comparator",
+      "git -C comparator checkout --detach fd5d5bcf14177b187f66d4502071268d877887c3",
+      "(cd comparator && lake +leanprover/lean4:v4.35.0-rc3 build)",
+      "git clone https://github.com/ammkrn/nanoda_lib.git nanoda_lib",
+      "git -C nanoda_lib checkout --detach 3a2407216ee84a75f9e1aead6803d0578be06ae7",
+      "(cd nanoda_lib && cargo +1.98.1 build --release --locked)"
+    ],
+    "script_environment": {
+      "CHECKER_TOOLS": "Absolute path to that checker-tools directory",
+      "LEAN_EXPORTER_426": "Absolute path to lean4export-426/.lake/build/bin/lean4export",
+      "LEAN_435": "Absolute path to the installed Lean 4.35.0-rc3 executable",
+      "CHECK_OUTPUT_DIR": "Optional nonexistent output directory outside formalization; use a path outside the source bundle to retain large exports separately"
+    },
+    "run_from_bundle_root": "sh scripts/independent-checks.sh",
+    "source_guard": "Exact repository revisions; git diff HEAD --no-ext-diff --no-textconv --exit-code on tracked .lean/.rs files, including staged and unstaged changes; reject non-ignored untracked .lean/.rs files. Configuration changes, ignored build/dependency files and supplied build artifacts remain part of the trusted setup.",
+    "provenance_limit": "These commands allow a reader to build the pinned tools. The script records supplied binary hashes and source pins; it does not cryptographically prove that those binaries were built from those sources."
+  },
+  "independent_nanoda_rust_typechecker": true,
+  "focused_kernel_boundary_controls": {
+    "status": "PASSED",
+    "fixture_export_bytes": 4655,
+    "positive_fixture_declarations": 9,
+    "positive_fixture_accepted_by_comparator_and_nanoda": true,
+    "malformed_recursor_rule_rejected_by_both": true,
+    "undeclared_universe_parameter_rejected_by_both": true,
+    "negative_inductive_occurrence_rejected_by_both": true,
+    "diagnostic_validation_sha256": "3c34ae42bd039a0da285800d09faabfb9277ecb99dd8afe3b397f5f9a7cd0b50",
+    "scope": "Small isolated Init-based exports; the nine declarations are separate from the main theorem replay. Successful controls establish these rejection paths, not general checker correctness.",
+    "setup_attempt": "An initial positive-fixture run failed because Lean 4.35 was absent from the subprocess PATH. It is not credited as a rejection control; the corrected setup accepts the positive fixture."
+  },
+  "checker_coverage_review": {
+    "status": "READ-ONLY IMPLEMENTATION REVIEW, NOT A FORMAL VERIFICATION OF EITHER CHECKER",
+    "nanoda": {
+      "classification": "Independent Rust external type checker for exported Lean declarations.",
+      "inductives": "Reconstructs the inductive block, checks constructor positivity and universe size, generates recursor types and computation rules, verifies the exact recursor-name set, and compares supplied constructor/recursor metadata with generated data. Nested inductives use specialization and restoration comparisons.",
+      "universes": "Checks universe-parameter uniqueness and scope, substitution arity, sort formation, and max/imax inequalities.",
+      "conversion": "Implements beta/let/recursor/projection reduction, eta and proof irrelevance. Proof irrelevance compares the proposition types; it does not identify proofs of different propositions.",
+      "primitives": "The configured natural-number and string extensions use dedicated computation paths. Their intended definitions are independently compared against a pristine Lean Init export by Comparator.",
+      "axioms": "Nanoda permits axioms by name and checks their types are well formed. The exact allowed axiom types are separately checked by Comparator against pristine Lean Init; a name alone does not certify an intended axiom."
+    },
+    "comparator": {
+      "classification": "Statement/definition comparator plus replay into the Lean 4.35.0-rc3 kernel, starting from an empty kernel environment.",
+      "inductives": "Lean replay sends inductive specifications and constructors to the kernel, then checks all exported constructor and recursor records equal the generated records; exported recursor rules are not simply trusted.",
+      "quotients": "The Quot declaration creates the kernel quotient primitives; Comparator separately checks the exported Quot, Quot.mk, Quot.lift and Quot.ind records against the final kernel environment.",
+      "unsafe": "Lean replay skips unsafe/partial declarations. Nanoda rejects unsafe/partial declarations, and the production proof closure was separately scanned for unsafe source declarations and unapproved axioms."
+    },
+    "shared_boundary": "Both credited main checks consume the same Lean 4.26 proof export. Export completeness and correspondence with intended source semantics are not independently proved by this audit. Tool source pins and supplied binary hashes identify trusted artifacts; they do not establish binary/source correspondence."
+  }
+}

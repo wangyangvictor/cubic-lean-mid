@@ -1,0 +1,1 @@
+import CubicTenVariables.Theorem11ReducedZetaInternalCurves

@@ -1,0 +1,10 @@
+**/.lake/
+**/.elan/
+**/.DS_Store
+**/*.olean
+**/*.ilean
+**/*.olean.private
+**/*.olean.server
+**/__pycache__/
+checks/independent-run*/
+**/*.ndjson
